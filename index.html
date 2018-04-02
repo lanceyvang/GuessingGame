@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src='fullstacklogo.png' id="fullstacklogo"></img>
+            </div>
+            <div class="col-md-8">
+                <div id='headers'>
+                    <!-- Title and subtitles! -->
+                    <h1><i class="fas fa-gamepad"></i> Guessing Game!</i></h1>
+                    <h2>Guess a number between 1-100!</h2>
+                    <input type="text" placeholder="#" id="player-input">
+                    <!-- <button>Go!</button> -->
+                    <button type="button" class="btn btn-success" id="submit">Go!</button>
+                    
+                    <div id='guesses'>
+                        <ul id='guess-list'>
+                            <li class='guess'>-</li>
+                            <li class='guess'>-</li>
+                            <li class='guess'>-</li>
+                            <li class='guess'>-</li>
+                            <li class='guess'>-</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-warning">Reset</button>
+                        <button type="button" class="btn btn-info">Hint</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <img src='grace hopper transparent.png' id="gracehopperlogo"></img>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div> -->
+    <div id='app'>
+
+        <div id='main'>
+            <div id='input-parent'>
+                <!-- Player's guess input, and submit button -->
+                <!-- <input type="text" placeholder="#">
+                <button>Go!</button> -->
+            </div>
+
+            <div id='guesses'>
+                <!-- unordered list of guesses -->
+            </div>
+
+            <div id="menu-btns">
+                <!-- reset and hint buttons -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id='footer'>
+        <div>
+            <div class=''>
+                <!-- <img src='fullstacklogo.png' id="fullstacklogo"></img>
+                <img src='grace hopper transparent.png' id="gracehopperlogo"></img> -->
+            </div>
+
+            <!-- <div class=''>
+                <h4>Project by YOUR NAME HERE</h4>
+            </div>
+
+            <div class=''>
+                <img src='gracehopperlogo.png'></img>
+            </div> -->
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
